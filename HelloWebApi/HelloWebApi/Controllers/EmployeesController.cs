@@ -11,7 +11,6 @@ namespace HelloWebApi.Controllers
     public class EmployeesController : ApiController
     {
         // GET api/<controller>
-        [SwaggerOperation("GetEmployees")]
         public IEnumerable<Employee> Get()
         {
             return new []
