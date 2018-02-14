@@ -5,11 +5,7 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWebApi", "HelloWebApi\HelloWebApi.csproj", "{9118C8BC-1E0D-44DD-92DC-0CA8FCE1E77A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{11D9427B-B6A7-489B-8539-37FA7FD133CF}"
-	ProjectSection(SolutionItems) = preProject
-		config.json = config.json
-		generate.cmd = generate.cmd
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWebApi.Client", "HelloWebApi.Client\HelloWebApi.Client.csproj", "{D00C089E-348C-401B-AE32-16B69DA8CD78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +17,10 @@ Global
 		{9118C8BC-1E0D-44DD-92DC-0CA8FCE1E77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9118C8BC-1E0D-44DD-92DC-0CA8FCE1E77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9118C8BC-1E0D-44DD-92DC-0CA8FCE1E77A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D00C089E-348C-401B-AE32-16B69DA8CD78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D00C089E-348C-401B-AE32-16B69DA8CD78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D00C089E-348C-401B-AE32-16B69DA8CD78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D00C089E-348C-401B-AE32-16B69DA8CD78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
