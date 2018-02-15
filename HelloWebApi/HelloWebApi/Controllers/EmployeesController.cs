@@ -18,8 +18,13 @@ namespace HelloWebApi.Controllers
             _employeeRepository = employeeRepository;
         }
 
+        protected EmployeesController()
+        {
+        }
+
         // GET api/<controller>
-        public IEnumerable<Employee> Get()
+        [Intercept]
+        public virtual IEnumerable<Employee> Get()
         {
             var isAuthenticated = User.Identity.IsAuthenticated;
             var user = User.Identity.Name;
