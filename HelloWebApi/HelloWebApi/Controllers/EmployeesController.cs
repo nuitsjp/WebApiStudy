@@ -4,20 +4,24 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using HelloWebApi.Models;
 using Swashbuckle.Swagger.Annotations;
 
 namespace HelloWebApi.Controllers
 {
     public class EmployeesController : ApiController
     {
+        private readonly IEmployeeRepository _employeeRepository;
+
+        public EmployeesController(IEmployeeRepository employeeRepository)
+        {
+            _employeeRepository = employeeRepository;
+        }
+
         // GET api/<controller>
         public IEnumerable<Employee> Get()
         {
-            return new []
-            {
-                new Employee{Id = 1, Name = "山田 太郎", BirthDay = DateTime.Parse("1970/01/01")},
-                new Employee{Id = 2, Name = "佐藤 花子", BirthDay = DateTime.Parse("2000/10/11")}
-            };
+            return _employeeRepository.GetEmoloyees();
         }
 
         // GET api/<controller>/5
