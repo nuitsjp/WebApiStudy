@@ -21,6 +21,8 @@ namespace HelloWebApi.Controllers
         // GET api/<controller>
         public IEnumerable<Employee> Get()
         {
+            var isAuthenticated = User.Identity.IsAuthenticated;
+            var user = User.Identity.Name;
             return _employeeRepository.GetEmoloyees();
         }
 
